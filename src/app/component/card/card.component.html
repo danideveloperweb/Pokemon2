@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <div class="col" *ngFor="let poke of pokemom;">
+      <div class="card">
+        <div class="card-img-container">
+          <img [src]="poke.img" class="card-img-top img-fluid" [alt]="poke.nombre">
+          <h5 class="card-title-behind">{{poke.nombre}}</h5>
+        </div>
+        <div class="card-content">
+          <h5 class="card-title">{{poke.nombre}}</h5>
+          <p class="card-text">{{poke.bio}}</p>
+          <p class="card-text">tipo: {{poke.tipo}} <small class="text-muted">Nº{{poke.numero}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  
