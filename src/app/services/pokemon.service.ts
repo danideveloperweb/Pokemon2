@@ -6,12 +6,12 @@ import { pokemon } from './model/pokemon.help';
   providedIn: 'root'
 })
 export class PokemonService {
-  
-  pokemon: Pokemon[]  = pokemon;
+
+  pokemon: Pokemon[] = pokemon;
   constructor() { }
 
-  getPokemon(): Pokemon[]{
+  getPokemon(): Pokemon[] {
     return this.pokemon;
-}
+  }
 
 }
