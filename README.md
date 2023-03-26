@@ -1,27 +1,55 @@
+<div align="center"><img width="650" alt="portadaPokemon" src="https://user-images.githubusercontent.com/91413466/227765846-d738e625-5133-457a-984c-63f84470af86.png"></div>
+
 # Pokemon
+
+## Description 
+
+In this project, a SPA is being built in which only one page with Pokemon cards will be displayed. The cards are responsive, and a navbar and footer component have also been created. A fake database has been created in the module to assist the service that will inject the information.
+
+## Main features
+
+The Singleton design pattern is a creational pattern that guarantees that a class has only one instance and provides a global access point to it. In this project, this design pattern has been used because we load the services from the providers with a single instance.
+
+Mixin is being used in SCSS, which is a technique that allows for code reuse where a class incorporates methods and properties from another class without inheriting from it. Instead of inheriting from a single base class, a class can incorporate functionalities from one or several mixins, allowing the creation of classes with specific combinations of behaviors.
+Bootstrap has been used to make the application responsive and aesthetically appealing.
+
+# Access to the project
+
+Clone this repository
+$ git clone https://github.com/danideveloperweb/Pokemon2.git
+
+Install dependencies
+
+$ npm install
+
+Run the app
+
+$ ng serve -o
+
+Navigate to `http://localhost:4200/`
+
+# As you can see
+
+This gif shows what the project looks like visually.
+
+![pokemonGif](https://user-images.githubusercontent.com/91413466/227766339-fc5175ea-7486-4175-bbf4-f73e6507fb63.gif)
+
+## Access to the web Url
+
+https://pokemon2-sepia.vercel.app/
+
+## Technologies used
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-## Development server
+TypeScript 64.6%
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+SCSS 25.0% , Mxins, Bootstrap.
 
-## Code scaffolding
+HTML 10.4%
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# License
 
-## Build
+©Danideveloperweb
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
