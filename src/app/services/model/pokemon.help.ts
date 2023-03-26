@@ -66,5 +66,4 @@ export const pokemon: Pokemon[] = [
       img: "assets/img/ChienPao.png",
       tipo: "Siniestro,Hielo",
     },
-
   ];
