@@ -1,3 +1,11 @@
+<!-- <div class="btn-group d-flex justify-content-center justify-content-md-between mb-3" > -->
+<div class="btn-pokemon ">
+    <a href="#planta" class="btn-planta">Planta</a>
+    <a href="#fuego" class="btn-planta">Fuego</a>
+    <a href="#electrico" class="btn-planta">Eléctrico</a>
+    <a href="#siniestro" class="btn-planta">Siniestro</a>
+</div>
+
 <span class="form">
     <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
         <option *ngFor="let language of translate.getLangs()" [value]="language"
@@ -7,7 +15,20 @@
     </select>
 </span>
 <div class="container-fluid">
+    <div id="planta">{{typePlanta}}</div>
     <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <app-card *ngFor="let pokemon of pokemonView" [pokemonCard]="pokemon"></app-card>
+        <app-card *ngFor="let planta of pokemonPlanta" [pokemonCard]="planta"></app-card>
+    </div>
+    <div id="electrico">{{typeElectrico}}</div>
+    <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <app-card *ngFor="let electrico of pokemonElectrico" [pokemonCard]="electrico"></app-card>
+    </div>
+    <div id="fuego">{{typeFuego}}</div>
+    <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <app-card *ngFor="let fuego of pokemonFuego" [pokemonCard]="fuego"></app-card>
+    </div>
+    <div id="siniestro">{{typeSiniestro}}</div>
+    <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <app-card *ngFor="let siniestro of pokemonSiniestro" [pokemonCard]="siniestro"></app-card>
     </div>
 </div>
