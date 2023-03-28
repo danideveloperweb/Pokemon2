@@ -1,0 +1,13 @@
+<span class="form">
+    <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()" [value]="language"
+            [selected]="language === translate.currentLang">
+            {{ language }}
+        </option>
+    </select>
+</span>
+<div class="container-fluid">
+    <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <app-card *ngFor="let pokemon of pokemonView" [pokemonCard]="pokemon"></app-card>
+    </div>
+</div>
