@@ -1,19 +1,17 @@
-<!-- <div class="btn-group d-flex justify-content-center justify-content-md-between mb-3" > -->
 <div class="btn-pokemon ">
     <a href="#planta" class="btn-planta">Planta</a>
     <a href="#fuego" class="btn-planta">Fuego</a>
     <a href="#electrico" class="btn-planta">Eléctrico</a>
     <a href="#siniestro" class="btn-planta">Siniestro</a>
 </div>
-
-<span class="form">
-    <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
-        <option *ngFor="let language of translate.getLangs()" [value]="language"
-            [selected]="language === translate.currentLang">
-            {{ language }}
-        </option>
-    </select>
-</span>
+    <span class="form">
+        <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
+            <option *ngFor="let language of translate.getLangs()" [value]="language"
+                [selected]="language === translate.currentLang">
+                {{ language }}
+            </option>
+        </select>
+    </span>
 <div class="container-fluid">
     <div id="planta">{{typePlanta}}</div>
     <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3">
