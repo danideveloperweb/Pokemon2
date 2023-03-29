@@ -38,11 +38,21 @@ export class ViewCardComponent implements OnInit {
   constructor(private pokemonService: PokemonService, public translate: TranslateService) {
 
     translate.addLangs(['es', 'en']);
-    translate.setDefaultLang('es');
+    if(localStorage.getItem("locale")) {
+      translate.setDefaultLang(localStorage.getItem("locale") || "[]");
+      translate.use(localStorage.getItem("locale") || "[]");
+    } else {
+      const browserLang = translate.getBrowserLang();
+      translate.setDefaultLang(browserLang || "[]");
+      translate.use(browserLang?.match(/en|es/) ? browserLang : "en");
+      localStorage.setItem("locale", browserLang || "[]");
+    }
   }
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
+    this.translate.setDefaultLang(lang);
+    localStorage.setItem("locale", lang);
   }
 
   ngOnInit() {
