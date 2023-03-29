@@ -1,13 +1,13 @@
 
       <div class="card">
         <div class="card-img-container">
-          <img [src]="pokemonCard.img" class="card-img-top img-fluid" [alt]="pokemonCard.nombre">
-          <h5 class="card-title-behind">{{pokemonCard.nombre}}</h5>
+          <img [src]="pokemonCard.img" class="card-img-top img-fluid" [alt]="pokemonCard.name">
+          <h5 class="card-title-behind">{{pokemonCard.name}}</h5>
         </div>
         <div class="card-content">
-          <h5 class="card-title">{{pokemonCard.nombre}}</h5>
+          <h5 class="card-title">{{pokemonCard.name}}</h5>
           <p class="card-text">{{pokemonCard.bio}}</p>
-          <p class="card-text">{{"type" | translate}}: {{pokemonCard.tipo}}</p>
-          <p class="card-text"><small class="text-muted">{{"number" | translate}}:{{pokemonCard.numero}}</small></p>
+          <p class="card-text">{{"type" | translate}}: {{pokemonCard.type}}</p>
+          <p class="card-text"><small class="text-muted">{{"number" | translate}}:{{pokemonCard.number}}</small></p>
         </div>
       </div>
