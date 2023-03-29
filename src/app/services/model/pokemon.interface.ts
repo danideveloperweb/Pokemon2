@@ -1,7 +1,7 @@
 export interface IPokemon{
-    numero: number,
-    nombre: string;
+    number: number,
+    name: string;
     bio: string;
     img: string;
-    tipo: string[];
+    type: string[];
 }

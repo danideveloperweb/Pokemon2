@@ -4,81 +4,83 @@ import { IPokemon } from './pokemon.interface';
 
 export const pokemon: IPokemon[] = [
     {
-      numero: 1,
-      nombre: "Bulbasaur",
+      number: 1,
+      name: "Bulbasaur",
       bio: "Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.",
       img: "assets/img/Bulbasaur.png",
-      tipo: [
+      type: [
         "Planta",
         "Veneno"
       ],
     },
     {
-      numero: 2,
-      nombre: "Ivysaur",
+      number: 2,
+      name: "Ivysaur",
       bio: "Cuando le crece bastante el bulbo del lomo, pierde la capacidad de erguirse sobre las patas traseras.",
       img: "assets/img/Ivysaur.png",
-      tipo: [
+      type: [
         "Planta",
         "Veneno"
       ],
     },
     {
-      numero: 3,
-      nombre: "Venusaur",
+      number: 3,
+      name: "Venusaur",
       bio: "La planta florece cuando absorbe energía solar, lo cual le obliga a buscar siempre la luz del sol.",
       img: "assets/img/Venusaur.png",
-      tipo: [
+      type: [
         "Planta",
         "Veneno"
       ],
     },
     {
-      numero: 4,
-      nombre: "Charmander",
+      number: 4,
+      name: "Charmander",
       bio: "Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola.",
       img: "assets/img/Charmander.png",
-      tipo: ["Fuego"],
+      type: ["Fuego"],
     },
     {
-      numero: 5,
-      nombre: "Charmeleon",
+      number: 5,
+      name: "Charmeleon",
       bio: "Este Pokémon de naturaleza agresiva ataca en combate con su cola llameante y hace trizas al rival con sus afiladas garras.",
       img: "assets/img/Charmeleon.png",
-      tipo: ["Fuego"],
+      type: ["Fuego"],
     },
     {
-      numero: 6,
-      nombre: "Charizard",
+      number: 6,
+      name: "Charizard",
       bio: "Escupe un fuego tan caliente que funde las rocas. Causa incendios forestales sin querer.",
       img: "assets/img/Charizard.png",
-      tipo: [
+      type: [
         "Fuego",
         "Volador"
       ],
     },
     {
-      numero: 7,
-      nombre: "Pikachu",
+      number: 7,
+      name: "Pikachu",
       bio: "Cuando se enfada, este Pokémon descarga la energía que almacena en el interior de las bolsas de las mejillas.",
       img: "assets/img/Pikachu.png",
-      tipo: ["Eléctrico"],
+      type: ["Eléctrico"],
     },
     {
-      numero: 8,
-      nombre: "Raichu",
+      number: 8,
+      name: "Raichu",
       bio: "Su cola actúa como toma de tierra y descarga electricidad al suelo, lo que le protege de los calambrazos.",
       img: "assets/img/Raichu.png",
-      tipo: ["Eléctrico"],
+      type: ["Eléctrico"],
     },
     {
-      numero: 9,
-      nombre: "ChienPao",
+      number: 9,
+      name: "ChienPao",
       bio: "Controla a su voluntad masas de nieve de hasta cien toneladas. Se divierte zambulléndose y saltando felizmente en los aludes que provoca.",
       img: "assets/img/ChienPao.png",
-      tipo: [
+      type: [
         "Siniestro",
         "Hielo"
       ],
     },
   ];
+
+  
